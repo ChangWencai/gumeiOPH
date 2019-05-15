@@ -13,6 +13,6 @@ func (c *MainController) Get() {
 	//c.Data["Email"] = "astaxie@gmail.com"
 
 	c.Data["Home"] = "HOME"
-	c.Data["What"] = "素材"
+	//c.Data["What"] = "首页"
 	c.TplName = "index.html"
 }
