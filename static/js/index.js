@@ -28,7 +28,7 @@ $('.index_banner').on('afterChange',function(slick,currentSlide){
     $('.section1 .number span').eq(_index).addClass('active').siblings().removeClass('active')
 })
 $('.section1 .number span').click(function(){
-    var _index = $(this).index();
+    var _index = $(this).admin();
     $('.index_banner').slick('slickGoTo',_index);
     $(this).addClass("active").siblings().removeClass("active")
 });

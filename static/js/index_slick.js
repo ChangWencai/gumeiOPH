@@ -716,9 +716,9 @@
                 }
                 break;
 
-            case 'index':
-                var index = event.data.index === 0 ? 0 :
-                    event.data.index || $target.index() * _.options.slidesToScroll;
+            case 'index.html':
+                var index = event.data.admin === 0 ? 0 :
+                    event.data.admin || $target.admin() * _.options.slidesToScroll;
 
                 _.slideHandler(_.checkNavigable(index), false, dontAnimate);
                 $target.children().trigger('focus');
@@ -1261,7 +1261,7 @@
 
         _.changeSlide({
             data: {
-                message: 'index',
+                message: 'index.html',
                 index: parseInt(slide)
             }
         }, dontAnimate);
@@ -1397,7 +1397,7 @@
 
         if (_.options.dots === true) {
             $('li', _.$dots).on('click.slick', {
-                message: 'index'
+                message: 'index.html'
             }, _.changeSlide);
 
             if (_.options.accessibility === true) {
@@ -1849,7 +1849,7 @@
 
             _.changeSlide({
                 data: {
-                    message: 'index',
+                    message: 'index.html',
                     index: currentSlide
                 }
             }, false);

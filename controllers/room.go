@@ -2,7 +2,6 @@ package controllers
 
 import "github.com/astaxie/beego"
 
-
 // 房间布局图
 type RoomController struct {
 	beego.Controller

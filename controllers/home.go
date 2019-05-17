@@ -4,7 +4,6 @@ import (
 	"github.com/astaxie/beego"
 )
 
-
 // 首页
 type MainController struct {
 	beego.Controller

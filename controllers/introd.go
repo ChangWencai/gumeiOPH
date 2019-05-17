@@ -2,7 +2,6 @@ package controllers
 
 import "github.com/astaxie/beego"
 
-
 // 简介
 type IntrodController struct {
 	beego.Controller

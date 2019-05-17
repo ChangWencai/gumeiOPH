@@ -2,7 +2,6 @@ package controllers
 
 import "github.com/astaxie/beego"
 
-
 // 服务
 type ServiceController struct {
 	beego.Controller
