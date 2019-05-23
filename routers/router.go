@@ -17,4 +17,5 @@ func init() {
 	beego.Router("/contact", &controllers.ContactController{})
 	beego.Router("/admin", &afterEnd.AdminController{})
 	beego.Router("/end", &afterEnd.EndController{})
+	beego.Router("/login",&afterEnd.AdminController{},"*:Login")
 }

@@ -18,5 +18,6 @@ func (c *AdminController) Login() {
 	name := c.GetString("name")
 	psword := c.GetString("password")
 	logs.Info(name, psword)
-	c.TplName = "end/index"
+	c.TplName = "home.html"
+	c.Layout = "end/index.html"
 }
